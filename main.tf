@@ -13,9 +13,9 @@ resource "aws_instance" "my_ec2" {
     }
 }
 
-resource "aws_s3_bucket" "bucket_1aa" {
+resource "aws_s3_bucket" "bucket-1aa" {
 
- bucket = "firstbucket_aa" 
+ bucket = "firstbucket-aa" 
  tags = {
     name = "practice"
  }
