@@ -22,5 +22,5 @@ resource "aws_s3_bucket" "bucket-1aa" {
 }
 
 output "mys3" {
-    value = aws_s3_bucket.bucket_1aa
+    value = aws_s3_bucket.bucket-1aa
 }
