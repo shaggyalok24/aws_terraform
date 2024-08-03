@@ -15,8 +15,12 @@ resource "aws_instance" "my_ec2" {
 
 resource "aws_s3_bucket" "terabucket" {
 
- bucket = "terabucket" 
+ bucket = "firstbucket" 
  tags = {
     name = "practice"
  }
+}
+
+output "mys3" {
+    value = aws_s3_bucket.terabucket
 }
