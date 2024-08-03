@@ -13,14 +13,14 @@ resource "aws_instance" "my_ec2" {
     }
 }
 
-resource "aws_s3_bucket" "bucket_1" {
+resource "aws_s3_bucket" "bucket_1aa" {
 
- bucket = "firstbucket" 
+ bucket = "firstbucket_aa" 
  tags = {
     name = "practice"
  }
 }
 
 output "mys3" {
-    value = aws_s3_bucket.bucket_1
+    value = aws_s3_bucket.bucket_1aa
 }
