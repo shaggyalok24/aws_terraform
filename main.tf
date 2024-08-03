@@ -13,7 +13,7 @@ resource "aws_instance" "my_ec2" {
     }
 }
 
-resource "aws_s3_bucket" "terabucket" {
+resource "aws_s3_bucket" "bucket_1" {
 
  bucket = "firstbucket" 
  tags = {
