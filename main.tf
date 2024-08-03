@@ -22,5 +22,5 @@ resource "aws_s3_bucket" "bucket_1" {
 }
 
 output "mys3" {
-    value = aws_s3_bucket.terabucket
+    value = aws_s3_bucket.bucket_1
 }
