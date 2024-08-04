@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "my_ec2" {
-    ami = "ami-06489866022e12a14"
-    instance_type = "t2.micro"
+    ami = var.ami_id.default
+    instance_type = var.instance_type.default
     key_name = "gopal"
     tags = {
 
