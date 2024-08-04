@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "my_ec2" {
-    ami = var.ami_id.default
+    ami = var.image.default
     instance_type = var.instance_type.default
     key_name = "gopal"
     tags = {
