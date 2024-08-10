@@ -1,3 +1,4 @@
+/*
 provider "aws" {
     region = "ap-south-1"
 }
@@ -24,3 +25,4 @@ resource "aws_s3_bucket" "bucket-1aa" {
 output "mys3" {
     value = aws_s3_bucket.bucket-1aa
 }
+*/
