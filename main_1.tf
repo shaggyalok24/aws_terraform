@@ -20,6 +20,6 @@ resource "aws_instance" "my_ec2" {
     tags = {
 
         name = "alok"
-        value = 
+        value = each.key
     }
 }
