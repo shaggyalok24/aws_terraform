@@ -8,7 +8,7 @@ data "aws_availability_zones" "available" {
 }
 
 output "list_of_az" {
-  value = data.aws_availability_zones.available.names
+  value = toset( data.aws_availability_zones.available.names )
 }
 
 resource "aws_instance" "my_ec2" {
