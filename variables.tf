@@ -5,3 +5,8 @@ variable "instance_type" {
 variable "image" {
      default = "ami-0ad21ae1d0696ad58"
 }
+
+
+variable "az" {
+  default = data.aws_availability_zones.available[*].names
+}
