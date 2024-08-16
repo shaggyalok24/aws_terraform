@@ -3,6 +3,10 @@ provider "aws" {
    region = "ap-south-1"
 }
 
+locals {
+  instance_t = "t2.micro"
+  image = 
+}
 data "aws_availability_zones" "available" {
   state = "available"
 }
