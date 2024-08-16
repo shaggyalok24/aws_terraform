@@ -1,3 +1,4 @@
+/*
 Variable "instance_type" {
      default = t2.micro
 }
@@ -5,3 +6,4 @@ Variable "instance_type" {
 Variable "image" {
      default = ami-0ad21ae1d0696ad58
 }
+*/
