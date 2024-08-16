@@ -1,9 +1,9 @@
-/*
 Variable "instance_type" {
-     default = t2.micro
+     type = string
+     default = "t2.micro"
 }
 
 Variable "image" {
-     default = ami-0ad21ae1d0696ad58
+     type = string
+     default = "ami-0ad21ae1d0696ad58"
 }
-*/
