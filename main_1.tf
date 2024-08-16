@@ -5,7 +5,7 @@ provider "aws" {
 
 locals {
   instance_t = "t2.micro"
-  image = 
+  image = "ami-0ad21ae1d0696ad58"
 }
 data "aws_availability_zones" "available" {
   state = "available"
