@@ -3,14 +3,6 @@ provider "aws" {
    region = "ap-south-1"
 }
 
-locals {
-  instance_t = "t2.micro"
-  image = "ami-0ad21ae1d0696ad58"
-}
-data "aws_availability_zones" "available" {
-  state = "available"
-}
-
 output "list_of_az" {
   value = data.aws_availability_zones.available.names
 }
