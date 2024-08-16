@@ -17,9 +17,9 @@ output "list_of_az" {
 
 resource "aws_instance" "my_ec2" {
     count = length( data.aws_availability_zones.available.names )
-    ami = locals.image
+    ami = "ami-0ad21ae1d0696ad58"
     availability_zone = element(data.aws_availability_zones.available.names,count.index)
-    instance_type = locals.instance_t
+    instance_type = "t2.micro"
     key_name = "gopal"
     tags = {
 
