@@ -1,3 +1,4 @@
+/*
 provider "aws" {
 
    region = "ap-south-1"
@@ -23,3 +24,4 @@ resource "aws_instance" "my_ec2" {
         value = "instance-${element(data.aws_availability_zones.available.names,count.index)}"
     }
 }
+*/
